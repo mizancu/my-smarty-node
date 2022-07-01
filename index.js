@@ -2,7 +2,10 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 app.use(cors());
+
+//to get the data of req.body
 app.use(express.json());
+
 const port = process.env.PORT || 5000;
 
 app.get('/', (req, res) =>{
